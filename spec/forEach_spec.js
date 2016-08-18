@@ -5,10 +5,6 @@ describe('forEach', () => {
     expect ( forEach([2, 1], a => a + 2)).toEqual([4, 3])
   })
 
-  it ('iterates over elements of collection from right to left', () => {
-    expect ( ([2, 2]).forEach( a => a * 2)).toEqual([4, 4])
-  })
-
   it ('iterates over an object and return values and keys', () => {
     expect ( forEach({ 'a': 1, 'b': 2 }, values => values)).toEqual([1, 2])
   })
